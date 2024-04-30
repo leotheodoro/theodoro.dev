@@ -8,7 +8,7 @@ interface ArticleItemProps {
 export function ArticleItem({ article }: ArticleItemProps) {
   return (
     <li className="py-4">
-      <Link href="#">
+      <Link href={`/article/${article.id}`}>
         <h4 className="text-xl font-semibold">{article.title}</h4>
       </Link>
       <span className="text-sm">
