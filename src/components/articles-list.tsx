@@ -18,7 +18,7 @@ export function ArticlesList() {
           <ArticleItem article={article} key={article.id} />
         ))}
       </ul>
-      <Pagination className="pt-6">
+      <Pagination className="py-6">
         <PaginationContent>
           <PaginationItem>
             <PaginationPrevious href="#" />
