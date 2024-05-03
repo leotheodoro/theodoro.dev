@@ -1,71 +1,50 @@
 export const mockedArticle = `
-# Understanding the Basics of Python Programming
+# Programming with Markdown
 
 ## Introduction
-Python is one of the most popular and versatile programming languages today. It is used in web development, data science, artificial intelligence, and more. This article will guide beginners through the basics of Python programming.
+Markdown is a lightweight markup language with plain-text formatting syntax. It's often used for formatting readme files, writing messages in online discussion forums, and to create rich text using a plain text editor.
 
-## Setting Up Your Python Environment
-Before you begin coding, you need to set up your Python environment. Here are the steps:
+## Getting Started
+To start using Markdown, you don't need any special tools. Just a plain text editor and the knowledge of a few simple syntax rules.
 
-1. **Download Python**: Go to the [official Python website](https://python.org) and download Python for your operating system.
-2. **Install Python**: Run the installer and follow the instructions.
-3. **Verify Installation**: Open your command line (cmd on Windows, Terminal on macOS and Linux) and type:
-   ~~~bash
-   python --version
-   ~~~
-   This should display the Python version installed.
+### Basic Syntax
+- **Headers**: Use \`#\` for headings. The number of \`#\`s indicates the level of the heading.
+- **Lists**: Create unordered lists with \`-\`, \`+\`, or \`*\`, and ordered lists with numbers.
+- **Links**: \`[text](url)\` creates a hyperlink.
+- **Images**: \`![alt text](image url)\` inserts an image.
+- **Bold & Italic**: Use \`**bold**\` for **bold** and \`*italic*\` for *italic* text.
 
-## Writing Your First Python Script
-Let’s write a simple Python script that prints "Hello, World!".
+## Advanced Usage
+Markdown also supports more advanced features for code and formatting.
 
-1. Open your favorite text editor or IDE.
-2. Create a new file named ~hello_world.py~.
-3. Type the following code:
-   \`\`\`python
-   print("Hello, World!")
-   \`\`\`
-4. Save the file and run it from your command line:
-   ~~~bash
-   python hello_world.py
-   ~~~
-   You should see "Hello, World!" printed on the screen.
+### Code Blocks
+Use triple backticks (\`\`\`) to create code blocks:
 
-## Understanding Python Syntax
+\`\`\`python
+def hello_world():
+    print("Hello, world!")
 
-### Variables
-Variables in Python can be declared without specifying their type and can be reassigned to any other type of value, like so:
-~~~python
-x = 5
-x = "Now I'm a string"
-print(x)
-~~~
+hello_world()
+\`\`\`
 
-### Functions
-Functions in Python are defined using the ~def~ keyword. Here’s a simple function:
-~~~python
-def greet(name):
-    return "Hello, " + name + "!"
+### Tables
+Markdown allows you to create tables using pipes \` |
+  \`:
 
-print(greet("Alice"))
-~~~
+| Name     | Age | Location |
+|----------|-----|----------|
+| John Doe | 25  | USA      |
+| Jane Doe | 30  | Canada   |
 
-### Loops
-Python supports several types of loops, but the most common are ~for~ and ~while~.
+### Task Lists
+Create task lists with \` -
+    []\` for incomplete tasks and \` -
+    [x]\` for completed tasks:
 
-#### For Loop
-~~~python
-for i in range(5):
-    print(i)
-~~~
-
-#### While Loop
-~~~python
-i = 0
-while i < 5:
-    print(i)
-    i += 1
-~~~
+- [x] Learn Markdown
+- [ ] Master Markdown
 
 ## Conclusion
-Python is a powerful, readable language ideal for beginners and professionals alike. This tutorial only scratches the surface, but it's enough to get you started on your programming journey.
+Markdown is a simple and effective way to format text for the web, especially for programmers. With its lightweight syntax and easy-to-use features, Markdown is a great tool for writing documentation, readme files, and other text-based content.
+
 `
